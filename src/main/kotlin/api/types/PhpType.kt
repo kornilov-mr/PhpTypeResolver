@@ -1,6 +1,11 @@
 package org.example.api.types
 
-open class PhpType(private val typeName:String) {
+
+/**
+ * Basic class for a php type with [UnionType] class as an inheritor
+ * @property typeName the exact type name, for example, "int", "string", "mixed", "User"
+ */
+open class PhpType(private val typeName: String) {
 
     fun getTypeName(): String {
         return typeName
